@@ -1,0 +1,333 @@
+/* .navbarheader ,.navbarheader>a{
+    background-color: rgb(70, 99, 12);
+    color: white;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#nav_bar{
+    background-color: rgb(109, 109, 21) !important;
+    
+}
+/* .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    font-size: 20px;
+    padding-left: 25px;
+} */
+.d-flex {
+    display: flex!important;
+    margin-right: 50px;
+}
+
+#searchbox{
+    /* height: 180px;
+    width: 200px; */
+    background-color: yellow;
+    color: black;
+    border: 0px;
+    outline: 0px;
+    position: relative;
+    /* color: white; */
+    left: 40px;
+}
+#searchbtn{
+    position: relative;
+    z-index: 99;
+    /* height: 100%;
+    width: 20%; */
+    cursor: pointer;
+    background-color: rgb(32, 26, 135);
+    color: white;
+    margin-right: 10px;
+}
+#searchbtn:hover{
+    background-color: brown;
+}
+
+/* banner */
+#bannerrow{
+    background-color: rgb(116, 208, 11);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+#bannertext{
+    padding: 10px;
+}
+#bannertext >h1{
+    font-size: 70px;
+}
+@media (max-width:450px) {
+    #bannertext >h1{
+        font-size: 50px;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #bannertext >button{
+        margin-left: 20px;
+    }
+    #bannertext{
+        padding: 10px;
+    }
+    #bannerimg{
+        display: none;
+    }
+    #secondbannerimg{
+        display: none;
+    }
+}
+
+#contactus_banner{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    
+}
+#service_banner{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    margin-left: 30px;
+    border: 1px solid white;
+}
+#bannerimg{
+    margin-top: 40px;
+    height: 400px;
+    width: 300px;
+}
+#bannerimg >img{
+    height: 100%;
+    width: 100%;
+}
+
+/* second banner */
+#secondbanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+    /* margin-top: 90px; */
+    /* flex-direction: ; */
+}
+#secondbannertext{
+    position: relative;
+    top: -90px;
+}
+
+#secondbannertext >h2{
+    font-size: 35px;
+}
+#secondbannertext >p{
+    font-size: 15px;
+}
+#secondbannerbtn{
+    height: 70px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    background-color:yellowgreen;
+    border: none;
+    outline: none;
+}
+#secondbannerimg >.row>.col-8{
+    height: 500px;
+    width: 500px;
+    /* border: 2px solid black; */
+    position: relative;
+    margin-top: 30px;
+    
+}
+#secondbannerimg >.row>.col-8 >img{
+    height: 100%;
+    width: 100%;
+}
+#blank{
+    height: 200px;
+    width: 300px;
+    position: relative;
+    top: -170px;
+    z-index: -1;
+    left: -50px;
+    border: 1px solid yellow;
+    background-color:yellowgreen;
+    margin-bottom: 30px;
+} 
+@media ( max-width:1000px){
+    #secondbanner{
+    margin-top: 110px;
+  }
+  #secondbannertext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+  #secondbannerimg{
+    margin-left: 80px;
+  }
+  #secondbannerimg >.row>.col-8{
+    top: -70px;
+    left: 110px;
+  }
+  #blank{
+   left: -460px;
+   top: 300px;
+  }
+
+}
+@media  (max-width:1000px) {
+    #blank{
+        display: none;
+    }
+    #secondbannerimg >.row>.col-8{
+       left: 40px;
+
+      }
+      #secondbannerimg{
+        margin-left: 10px;
+      }  
+}
+
+#medical{
+    min-height: 300px;
+    width: auto;
+    background-image: url("https://www.popularhospital.in/images/second-slider.jpg");
+    background-size: cover;
+    /* border: 2px solid black; */
+    mix-blend-mode:difference;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#health >i ,#hospital>i ,#vaccian>i{
+    font-size: 60px;
+    padding: 10px;
+    color: black;
+}
+#recent_post{
+    height: 200px;
+    width: 100%;
+    margin: 20px;
+}
+#recent_post >h1{
+    margin: 20px;
+}
+#recent_post >p{
+    padding: 10px;
+}
+h9{
+    font-size: 10px;
+    font-weight: 0.5px;
+    color: rgb(132, 132, 184);
+}
+
+#post1,#post2,#post3{
+    margin:20px;
+
+}
+#footer{
+   width: 100%;
+   height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 54, 54);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer_about >h4{
+    font-size: 25px;
+}
+#footer_about >p>a{
+    color: rgb(214, 200, 200);
+}
+#footer_service >h4{
+    font-size: 25px;
+}
+#footer_service >p>a{
+    color: rgb(169, 150, 150);
+}
+#footer_tittle >h4{
+    margin-top: 10px;
+    text-align: end;
+}
+#footer_tittle >p{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: end;
+}
+#inputfooter{
+    text-align: end;
+    margin: 10px;
+}
+#inputfooter >input{
+    height: 40px;
+    width: 70%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+}
+#inputfooter >button{
+    height: 40px;
+    width: 20%;
+    border: none;
+    outline: none;
+    background-color: rgb(17, 17, 86);
+}
+#inputfooter >button >i{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#input_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input_logo>div{
+    height: 45px;
+    width: 45px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 10px;
+    
+}
+#main_footer{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#main_footer>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+    font-family:  serif;
+}
